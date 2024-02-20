@@ -1,8 +1,15 @@
 import React from 'react'
 
+import {motion} from 'framer-motion'
+
 const About = () => {
   return (
-    <div className=' md:h-[90vh] md:flex flex-row-reverse gap-4 items-center justify-between '>
+    <motion.div 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+
+    className=' md:h-[90vh] md:flex flex-row-reverse gap-4 items-center justify-between '>
         <div className=' md:w-1/2'>
             <p className='  font-bold text-cyan-500 text-2xl uppercase my-4'>About Us</p>
             <h3>Welcome to Murang'a University Technology Club</h3>
@@ -13,7 +20,7 @@ const About = () => {
         <div className=' border-slate-700 p-4 border-rounded rotate-6   md:1/2'>
             <img className=' w-full h-full rounded-md' src='/man.png' />
         </div>
-    </div>
+    </motion.div>
   )
 }
 
