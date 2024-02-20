@@ -7,7 +7,7 @@ import Programs from './components/Programs';
 
 function App() {
   return (
-    <div className=" bg-gradient-to-r from-slate-900 to-slate-700  font-Inter text-white px-5  ">
+    <div className=" bg-gradient-to-r from-slate-900 to-slate-700  font-Inter text-white px-5 overflow-x-hidden  ">
       <div className=' md:w-[70%] m-auto'>
         <Navbar />
         <Hero />
