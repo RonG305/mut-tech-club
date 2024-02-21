@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { FaBars, FaCross } from 'react-icons/fa';
+import { FaBars, FaCross, FaSun, FaMoon } from 'react-icons/fa';
 
-const Navbar = () => {
+const Navbar = ({themeToggle, handleThemeToggle}) => {
     const [show, setShow] = useState(false);
 
     const navLinks = [
@@ -21,20 +21,25 @@ const Navbar = () => {
     };
 
     return (
-        <div className="flex items-center justify-between md:h-[75px] shadow-xl shadow-slate-600 px-2 rounded-md py-2 mb-8">
+        <div className="flex items-center justify-between lg:h-[75px] shadow-xl  px-2 rounded-md py-2 mb-8">
             <h3 className="font-bold text-cyan-500">MUTTeC</h3>
-            <div className={`md:flex items-center gap-4 ${show ? '' : 'hidden'}`}>
+            <div className={`lg:flex items-center gap-4 ${show ? '' : 'hidden'}`}>
                 {navLinks.map((link) => (
                     <li
                         key={link.name} 
-                        className="list-none capitalize hover:border hover:border-cyan-500 rounded-md px-2 py-1 cursor-pointer ease-out delay-150"
+                        className="list-none capitalize hover:border hover:border-sky-400 rounded-md px-2 py-1 cursor-pointer ease-out delay-150"
                         onClick={toggleNav}
                     >
                         {link.name}
                     </li>
                 ))}
+                <div className="bg-gray-100 rounded-full p-1 hover:cursor-pointer ">
+                <FaSun onClick={handleThemeToggle}  className=' text-sky-600 font-bold '  size={20} />
+                </div>
+                
             </div>
-            <FaBars className="md:hidden" size={30} onClick={toggleNav} /> {/* Toggle the navbar on mobile */}
+            
+            <FaBars className="lg:hidden" size={30} onClick={toggleNav} /> {/* Toggle the navbar on mobile */}
         </div>
     );
 };

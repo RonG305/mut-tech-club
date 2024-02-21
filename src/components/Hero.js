@@ -13,27 +13,28 @@ const Hero = () => {
   const imageVariants = {
     hidden: { opacity: 0 , y: -100},
     
-    visible: { opacity: 1, y: 0, transition: { duration: 4, delay: 0.5 }, scale: [1, 2, 2, 0.5, 1], rotate: [0, 0, 270, 270, 0],
+    visible: { opacity: 1, y: 0, transition: { duration: 4, delay: 0.5 , repeat: Infinity }, scale: [1, 2, 2, 0.5, 1], rotate: [0, 0, 270, 270, 0],
+    
     }
   };
 
 
   return (
-    <div className=' md:h-[85vh] gap-5  md:flex items-center justify-between '>
+    <div className=' lg:h-[85vh] gap-5  lg:flex items-center justify-between '>
       <motion.div
          variants={textVariants}
          initial='hidden'
          animate='visible'
 
-      className=' md:w-1/2'>
+      className=' w-full lg:w-1/2'>
         <motion.p
           variants={{hidden: {opacity: 0}, visible: {opacity: 1}}}
-          className=' text-cyan-500 font-bold  mb-4'
+          className=' text-sky-400 font-bold  mb-4'
         >MUT TEC CLUB</motion.p>
           <motion.h3
                 variants={{hidden: {opacity: 0}, visible: {opacity: 1}}}
                className=' font-extrabold text-3xl md:text-6xl mb-4'
-               >Building Technology For Fairness and <span className=' text-cyan-500'>Empowerment</span> 
+               >Building Technology For Fairness and <span className=' dark:text-sky-400'>Empowerment</span> 
                
           </motion.h3>
 
@@ -58,7 +59,7 @@ const Hero = () => {
         variants={imageVariants}
         initial='hidden'
         animate='visible'
-      className=' md:w-1/2 rounded-full'>
+      className='w-full lg:w-1/2 rounded-full'>
         <img  className=' rounded-full' src='/ai.jpg'  />
       </motion.div>
       
