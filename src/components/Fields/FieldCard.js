@@ -32,7 +32,7 @@ const FieldCard = ({themeToggle}) => {
                     
                     }>
                     
-                    <div className=' md:flex gap-8  '>
+                    <div className=' md:flex gap-8  p-2 '>
                         <img className='w-full h-72' src={field.image} />
 
                         <div
