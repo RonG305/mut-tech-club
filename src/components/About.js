@@ -12,7 +12,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             variants={variants} 
-            className='lg:h-[90vh] lg:flex flex-row-reverse gap-4 items-center justify-between'
+            className='h-[100vh] lg:flex flex-row-reverse gap-4 items-center justify-between'
         >
             <div className='w-full lg:w-1/2'>
                 <p className='font-bold text-cyan-500 text-2xl uppercase my-4'>About Us</p>

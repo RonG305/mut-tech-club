@@ -4,9 +4,10 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Programs from './components/Programs/Programs';
-import Portfolio from './components/Portfolio';
+import Portfolio from './components/Portfolio/Portfolio';
 import OurFields from './components/Fields/OurFields';
 import { useState } from 'react';
+import Team from './components/Team/Team';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
         <Programs themeToggle={themeToggle} />
         <OurFields themeToggle={themeToggle} />
         <Portfolio />
+        <Team />
         
       </div>
       

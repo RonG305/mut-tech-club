@@ -1,6 +1,7 @@
 import React from 'react'
 
 import {motion} from 'framer-motion'
+import Partners from './Partners/Partners';
 
 const Hero = () => {
 
@@ -20,6 +21,7 @@ const Hero = () => {
 
 
   return (
+    <>
     <div className=' lg:h-[85vh] gap-5  lg:flex items-center justify-between '>
       <motion.div
          variants={textVariants}
@@ -62,8 +64,16 @@ const Hero = () => {
       className='w-full lg:w-1/2 rounded-full'>
         <img  className=' rounded-full' src='/ai.jpg'  />
       </motion.div>
+
+
+     
       
     </div>
+    <div className=' '>
+      <Partners />
+    </div>
+   
+    </>
   )
 }
 
