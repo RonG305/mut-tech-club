@@ -22,6 +22,7 @@ const Card = ({project, index}) => {
         backgroundRepeat: 'no-repeat',
         height: '300px',
         borderRadius: '10px'
+        
       }}
     >
       <div className='p-4 '>

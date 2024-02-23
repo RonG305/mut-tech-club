@@ -5,14 +5,14 @@ const Navbar = ({themeToggle, handleThemeToggle}) => {
     const [show, setShow] = useState(false);
 
     const navLinks = [
-        { name: 'home', url: '/home' },
+        { name: 'home', url: '/' },
         { name: 'about', url: '/about' },
         { name: 'team', url: '/team' },
         { name: 'programs', url: '/programs' },
-        { name: 'events', url: '/events' },
+        { name: 'events', url: '' },
         { name: 'media', url: '/media' },
         { name: 'portfolio', url: '/portfolio' },
-        { name: 'our fields', url: '/our fields' },
+        { name: 'our fields', url: '/ourfields' },
         { name: 'contact', url: '/contact' }
     ];
 

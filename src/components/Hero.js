@@ -62,7 +62,7 @@ const Hero = () => {
         initial='hidden'
         animate='visible'
       className='w-full lg:w-1/2 rounded-full'>
-        <img  className=' rounded-full' src='/ai.jpg'  />
+        <img  className=' rounded-full' src='/ai.jpg' loading='lazy'  />
       </motion.div>
 
 

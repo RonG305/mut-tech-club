@@ -22,7 +22,7 @@ const About = () => {
             </div>
 
             <div className='border-slate-700 p-4 border-rounded md:w-1/2'>
-                <img className='md:w-96 w-full rounded-md' src='/man2.jpg' alt='man' />
+                <img className='md:w-96 w-full rounded-md' src='/man2.jpg' alt='man' loading='lazy' />
             </div>
         </motion.div>
     );
