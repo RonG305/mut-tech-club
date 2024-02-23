@@ -1,9 +1,17 @@
 import React from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
+import {motion} from 'framer-motion'
+
 
 
 const Team = () => {
+
+
+    const variants = {
+        hidden: {opacity: 0, y:200},
+        visible: {opacity: 1, y:0}
+    }
 
     const TeamLeaders = [
             {
@@ -47,7 +55,16 @@ const Team = () => {
         
     ]
   return (
-    <>
+    <motion.div
+        variants={variants}
+        initial="hidden"
+        whileInView="visible"
+        transition={{duration: 1, delay:0.5}}
+    >
+    <div className=' text-center'>
+        <h3 className=' text-3xl font-extrabold'>Team</h3>
+        <p className='text-sky-400 '>This is our able Team of leaders</p>
+    </div>
     <Splide
       className='my-4'
       options={ {
@@ -81,7 +98,7 @@ const Team = () => {
             <img src="/bs.png" alt="Image 3"/>
         </SplideSlide> */}
     </Splide>
-    </>
+    </motion.div>
    
   );
 }

@@ -28,7 +28,6 @@ const ProgramsCard = ({themeToggle}) => {
              <p
                 initial="hidden"
                 whileInView="visible"
-             
              >{program.description}
              
              </p>
@@ -41,6 +40,5 @@ const ProgramsCard = ({themeToggle}) => {
     </>   
     )
     }
-
 export default ProgramsCard    
 

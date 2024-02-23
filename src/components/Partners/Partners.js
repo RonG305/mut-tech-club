@@ -1,6 +1,7 @@
 import React from 'react'
 import { partnerLogos } from './PartnerLogos'
 import {motion} from 'framer-motion'
+import {Link} from 'react-router-dom'
 
 const Partners = () => {
 
@@ -17,8 +18,12 @@ const Partners = () => {
         variants={variants}
         className=' flex gap-3'>
         {partnerLogos.map((logo) => (
-            <img className=' w-14 md:w-40'  src={logo.logo} />
-        ))}
+        <a href={logo.link}>
+             <img className=' w-14 md:w-40'  src={logo.logo} />
+    
+        </a>
+            ))}
+           
     </motion.div>
   )
 }
