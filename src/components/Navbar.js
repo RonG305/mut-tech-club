@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
 import { FaBars, FaCross, FaSun, FaMoon } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-
 const Navbar = ({themeToggle, handleThemeToggle}) => {
     const [show, setShow] = useState(false);
 
     const navLinks = [
-        { name: 'home', url: '/' },
+        { name: 'home', url: '/home' },
         { name: 'about', url: '/about' },
         { name: 'team', url: '/team' },
         { name: 'programs', url: '/programs' },
         { name: 'events', url: '/events' },
         { name: 'media', url: '/media' },
         { name: 'portfolio', url: '/portfolio' },
-        { name: 'our fields', url: '/ourfields' },
+        { name: 'our fields', url: '/our fields' },
         { name: 'contact', url: '/contact' }
     ];
 
@@ -29,7 +28,7 @@ const Navbar = ({themeToggle, handleThemeToggle}) => {
                     <Link
                         to={link.url}
                         key={link.name} 
-                        className="list-none capitalize hover:border hover:border-sky-400 rounded-md px-2 py-1 cursor-pointer ease-out delay-150"
+                        className="flex flex-col  capitalize hover:border hover:border-sky-400 rounded-md px-2 py-1 cursor-pointer ease-out delay-150"
                         onClick={toggleNav}
                     >
                         {link.name}
