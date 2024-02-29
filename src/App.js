@@ -9,6 +9,8 @@ import OurFields from './components/Fields/OurFields';
 import { useState } from 'react';
 import Team from './components/Team/Team';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Media from './components/Media/Media';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -33,8 +35,11 @@ function App() {
                 <Route path='/ourfields' element={<OurFields themeToggle={themeToggle} />} />
                 <Route path='/portfolio' element={ <Portfolio />}/>
                 <Route path='/team' element={ <Team />}/>
+                <Route path='/media' element={<Media />} />
+               
                
             </Routes>
+            <Footer />
         </BrowserRouter>
        
         

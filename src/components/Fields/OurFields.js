@@ -2,11 +2,6 @@ import React from 'react'
 import FieldCard from './FieldCard'
 
 
-
-
-
-
-
 const OurFields = ({themeToggle}) => {
 
     

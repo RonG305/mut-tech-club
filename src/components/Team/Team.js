@@ -47,7 +47,18 @@ const Team = () => {
                 imageUrl: '/eric.jpeg',
                 leaderTitle: "Ezekiel Eric Njuguna:",
                 leaderIntro: "  Our Vice Chairman and  User Interface/User experience Leader",
-                description: "DEric plays a pivotal role in our club, excelling in two key capacities. As Vice Chairman, Eric provides crucial support and leadership, guiding our club towards its goals. Additionally, Eric leads our UI/UX efforts, ensuring our projects are not only functional but also visually appealing and user-friendly."
+                description: "DEric plays a pivotal role in our club, excelling in two key capacities. As Vice Chairman, Eric provides crucial support and leadership, guiding our club towards its goals. Additionally, Eric leads our UI/UX efforts, ensuring our projects are not only functional but also visually appealing and user-friendly.",
+                contactInfo: [
+                    {
+                        linkedIn: '',
+                        url: '',
+
+                    },
+
+                    {
+
+                    }
+                ]
             }
           
 
@@ -91,12 +102,6 @@ const Team = () => {
             </SplideSlide>
         ))}
         
-        {/* <SplideSlide>
-            <img src="/bs.png" alt="Image 2"/>
-        </SplideSlide>
-        <SplideSlide>
-            <img src="/bs.png" alt="Image 3"/>
-        </SplideSlide> */}
     </Splide>
     </motion.div>
    

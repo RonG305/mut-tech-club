@@ -21,7 +21,7 @@ const Navbar = ({themeToggle, handleThemeToggle}) => {
     };
 
     return (
-        <div className="flex items-center justify-between lg:h-[75px] shadow-xl  px-2 rounded-md py-2 mb-8">
+        <div className="flex items-center justify-between lg:h-[75px] shadow-xl  px-2 rounded-md py-2 mb-8 z-50">
             <h3 className="font-bold text-cyan-500">MUTTeC</h3>
             <div className={`lg:flex items-center gap-4 ${show ? '' : 'hidden'}`}>
                 {navLinks.map((link) => (

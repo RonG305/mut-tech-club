@@ -14,7 +14,7 @@ const Hero = () => {
   const imageVariants = {
     hidden: { opacity: 0 , y: -100},
     
-    visible: { opacity: 1, y: 0, transition: { duration: 4, delay: 0.5 , repeat: Infinity }, scale: [1, 2, 2, 0.5, 1], rotate: [0, 0, 270, 270, 0],
+    visible: { opacity: 1, y: 0, transition: { duration: 4, delay: 0.5 , repeat: Infinity }, scale: [1, 1.5, 1.5, 0.5, 1], rotate: [0, 0, 270, 270, 0],
     
     }
   };
@@ -22,7 +22,7 @@ const Hero = () => {
 
   return (
     <>
-    <div className=' lg:h-[85vh] gap-5  lg:flex items-center justify-between '>
+    <div className=' lg:h-[85vh] gap-5  lg:flex items-center justify-between mb-8'>
       <motion.div
          variants={textVariants}
          initial='hidden'
@@ -61,7 +61,7 @@ const Hero = () => {
         variants={imageVariants}
         initial='hidden'
         animate='visible'
-      className='w-full lg:w-1/2 rounded-full'>
+      className='w-full lg:w-1/2 rounded-full z-0'>
         <img  className=' rounded-full' src='/ai.jpg' loading='lazy'  />
       </motion.div>
 
