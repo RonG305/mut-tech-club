@@ -23,6 +23,7 @@ const Portfolio = () => {
       initial="hidden"
       whileInView="visible"
       transition={{duration: 1, delay: 0.5}}
+      id='portfolio'
     className={containerStyle}>
         <div className={subContainerStyle}>
             <h3 className={headerStyle}>{header}</h3>

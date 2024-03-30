@@ -70,6 +70,7 @@ const Team = () => {
         variants={variants}
         initial="hidden"
         whileInView="visible"
+        id='team'
         transition={{duration: 1, delay:0.5}}
     >
     <div className=' text-center'>

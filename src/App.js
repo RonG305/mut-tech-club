@@ -23,27 +23,39 @@ function App() {
 
 
   return (
-    <div className={` scroll-smooth bg-gradient-to-r ${ themeToggle? 'from-slate-900 to-slate-700 text-gray-200 transition-all ease-out delay-300 ': ' from-slate-100 to-sky-200 text-gray-800 transition-all ease-out delay-300'}  font-Inter  px-5 overflow-x-hidden`}>
-      <div className=' w-full md:w-[90%] lg:w-[70%] m-auto'>
+    <div className={`App scroll-smooth bg-gradient-to-r ${ themeToggle? 'from-green-950 to-slate-700 text-gray-200 transition-all ease-out delay-300 ': ' from-slate-100 to-sky-200 text-gray-800 transition-all ease-out delay-300'} px-4  font-Inter  overflow-x-hidden`}>
         <BrowserRouter>
-        <Navbar themeToggle={themeToggle} handleThemeToggle={handleThemeToggle}/>
-            <Routes>
 
-                <Route path='/' element={<Hero />} />
-                <Route path='/about' element={<About />} />
+        <Navbar themeToggle={themeToggle} handleThemeToggle={handleThemeToggle}/>
+      <div className=' w-full md:w-[90%] lg:w-[70%] m-auto'>
+      
+      
+           
+
+                <Hero />
+                <About />
+                <Programs />
+                <OurFields />
+                <Portfolio />
+                <Team />
+                
+                {/* <Route path='/about' element={<About />} />
                 <Route path='/programs' element={<Programs themeToggle={themeToggle} />} />
                 <Route path='/ourfields' element={<OurFields themeToggle={themeToggle} />} />
                 <Route path='/portfolio' element={ <Portfolio />}/>
                 <Route path='/team' element={ <Team />}/>
-                <Route path='/media' element={<Media />} />
+                <Route path='/media' element={<Media />} /> */}
                
                
-            </Routes>
-            <Footer />
-        </BrowserRouter>
+            
+            
+  
        
         
       </div>
+
+      <Footer />
+      </BrowserRouter>
       
     </div>
   );

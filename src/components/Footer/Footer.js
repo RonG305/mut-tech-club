@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className='md:h-[40vh] p-3 rounded-md my-6 shadow-xl shadow-gray-700'>
+    <footer className='md:h-[40vh] p-3 rounded-md mt-5  shadow-xl shadow-gray-900'>
       <div className=' md:grid grid-cols-5'>
         {footerData.map((footerSection, index) => (
           <div key={index} className='mb-4'>

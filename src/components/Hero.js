@@ -27,7 +27,7 @@ const Hero = () => {
          variants={textVariants}
          initial='hidden'
          animate='visible'
-
+          id='home'
       className=' w-full lg:w-1/2'>
         <motion.p
           variants={{hidden: {opacity: 0}, visible: {opacity: 1}}}
@@ -36,7 +36,7 @@ const Hero = () => {
           <motion.h3
                 variants={{hidden: {opacity: 0}, visible: {opacity: 1}}}
                className=' font-extrabold text-3xl md:text-6xl mb-4'
-               >Building Technology For Fairness and <span className=' dark:text-sky-400'>Empowerment</span> 
+               >Building Technology For Fairness and <span className=' dark:text-blue-600'>Empowerment</span> 
                
           </motion.h3>
 
@@ -49,7 +49,7 @@ const Hero = () => {
 
         <motion.button
            variants={{hidden: {opacity: 0}, visible: {opacity: 1}}}
-           className=' rounded-md px-3 py-2 border-cyan-500 bg-gradient-to-r from-cyan-900 to-cyan-600 font-bold hover:bg-cyan-400 hover:scale-110'
+           className=' rounded-md px-3 py-2 bg-blue-600 '
         >
           Learn more
         </motion.button>
@@ -62,7 +62,7 @@ const Hero = () => {
         initial='hidden'
         animate='visible'
       className='w-full lg:w-1/2 rounded-full z-0'>
-        <img  className=' rounded-full' src='/ai.jpg' loading='lazy'  />
+        <img  className=' rounded-full' src='/ai.jpg' loading='lazy' alt='world globe'  />
       </motion.div>
 
 
