@@ -22,7 +22,7 @@ const Hero = ({themeToggle}) => {
 
   return (
     <>
-    <div className=' lg:h-[85vh] gap-5  lg:flex items-center justify-between mb-8 mt-[80px]'>
+    <div className=' lg:h-[85vh] gap-5  lg:flex items-center justify-between py-10 mb-8 mt-[80px]'>
       <motion.div
          variants={textVariants}
          initial='hidden'

@@ -47,7 +47,7 @@ const Team = () => {
                 imageUrl: '/eric.jpeg',
                 leaderTitle: "Ezekiel Eric Njuguna:",
                 leaderIntro: "  Our Vice Chairman and  User Interface/User experience Leader",
-                description: "DEric plays a pivotal role in our club, excelling in two key capacities. As Vice Chairman, Eric provides crucial support and leadership, guiding our club towards its goals. Additionally, Eric leads our UI/UX efforts, ensuring our projects are not only functional but also visually appealing and user-friendly.",
+                description: "Deric plays a pivotal role in our club, excelling in two key capacities. As Vice Chairman, Eric provides crucial support and leadership, guiding our club towards its goals. Additionally, Eric leads our UI/UX efforts, ensuring our projects are not only functional but also visually appealing and user-friendly.",
                 contactInfo: [
                     {
                         linkedIn: '',
@@ -83,8 +83,8 @@ const Team = () => {
         rewind: true,
         gap   : '1rem',
         autoplay:true,
-        // height: "600px",
-        heightRatio: 0.4
+        height: "600px",
+        // heightRatio: 0.4
         
      
       } }
@@ -95,7 +95,7 @@ const Team = () => {
             <SplideSlide   
                 className='md:flex gap-4 bg-slate-700 rounded-md p-3 '
             >
-                <img className='lg:w-1/2 h-[50%]  rounded-md' src={lead.imageUrl} alt="Image 1"/>
+                <img className='lg:w-1/2 md:h-full h-[50%]  rounded-md' src={lead.imageUrl} alt="Image 1"/>
                 <div className=' p-2'>
                     <h3 className=' text-blue-600 font-bold text-2xl mb-2'>{lead.leaderTitle}</h3>
                     <h4 className=' font-bold text-slate-300 text-xl'>{lead.leaderIntro}</h4>

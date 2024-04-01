@@ -19,7 +19,7 @@ const About = () => {
             whileInView="visible"
             variants={variants} 
             id='about'
-            className='h-[100vh] lg:flex flex-row-reverse gap-4 items-center justify-between'
+            className='h-[100vh] lg:flex flex-row-reverse gap-4 py-10 items-center justify-between'
         >
             <div className='w-full lg:w-1/2'>
                 <p className='font-bold text-blue-600 text-2xl md:text-4xl uppercase my-4'>About Us</p>
