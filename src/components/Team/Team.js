@@ -25,7 +25,7 @@ const Team = () => {
                 imageUrl: './ivy.jpg',
                 leaderTitle: "  Ivy Nyambura:",
                 leaderIntro: ' Our Blockchain/Cybersecurity Leader and MUT Tech Club Secretary',
-                description: "Ivy Nyambura is the driving force behind our Blockchain and Cybersecurity initiatives. As our dedicated leader in these critical fields, Ivy ensures our club remains at the forefront of technological security. Additionally, Ivy serves as the efficient and organized Secretary, keeping our club running smoothly behind the scenes."
+                description: "Ivy Nyambura leads our Blockchain and Cybersecurity efforts, keeping our club at the forefront of tech security. She also serves as the organized Secretary, ensuring smooth club operations."
             },
 
             {
