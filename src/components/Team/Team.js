@@ -84,7 +84,7 @@ const Team = () => {
         gap   : '1rem',
         autoplay:true,
         // height: "600px",
-        heightRatio: 0.2
+        heightRatio: 0.4
         
      
       } }
