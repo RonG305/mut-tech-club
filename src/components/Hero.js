@@ -3,7 +3,7 @@ import React from 'react'
 import {motion} from 'framer-motion'
 import Partners from './Partners/Partners';
 
-const Hero = () => {
+const Hero = ({themeToggle}) => {
 
 
   const textVariants = {
@@ -72,7 +72,7 @@ const Hero = () => {
 
     </div>
     <div className=' '>
-      <Partners />
+      <Partners themeToggle={themeToggle} />
     </div>
     
    

@@ -32,7 +32,7 @@ function App() {
       
            
 
-                <Hero />
+                <Hero themeToggle={themeToggle}  />
                 <About />
                 <Programs themeToggle={themeToggle} />
                 <OurFields />

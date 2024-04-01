@@ -3,7 +3,7 @@ import { partnerLogos } from './PartnerLogos'
 import {motion} from 'framer-motion'
 import {Link} from 'react-router-dom'
 
-const Partners = () => {
+const Partners = ({themeToggle}) => {
 
     const variants = {
         hidden: {opacity: 0, x: -200},
@@ -16,7 +16,7 @@ const Partners = () => {
         id='partners'
         className=' flex flex-wrap gap-3'>
         {partnerLogos.map((logo) => (
-          <span className=' border border-gray-700 rounded-md px-3 py-1 flex items-center cursor-pointer gap-3 w-fit hover:bg-slate-950  transition-all delay-150 hover:translate-x-1 '>
+          <span className={` ${themeToggle? ' border border-slate-700': ' border-slate-300'} border  rounded-md px-3 py-1 flex items-center cursor-pointer gap-3 w-fit hover:bg-slate-950  transition-all delay-150 hover:translate-x-1 `}>
                <a href={logo.link} >
              <img className=' ' style={{width: "45px"}}  src={logo.logo} />
     
