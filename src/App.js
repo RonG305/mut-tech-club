@@ -14,7 +14,7 @@ import Footer from './components/Footer/Footer';
 
 function App() {
 
-  const [themeToggle, setThemeToggle] = useState(true)
+  const [themeToggle, setThemeToggle] = useState(false)
 
 
   const handleThemeToggle = () => {
