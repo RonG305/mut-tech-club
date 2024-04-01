@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 const ProgramsCard = ({themeToggle}) => {
     const variants = {
         hidden: { opacity:0, },
-        visible: { opacity:1, rotate: [0, 30, 30, 0, ]},
+        visible: { opacity:1, rotate: [0, 5, 5, 0, ]},
     }
 
     const textVariants = {
@@ -22,8 +22,8 @@ const ProgramsCard = ({themeToggle}) => {
                 whileInView="visible"
                 transition={{duration: 2}}
                 variants={variants}
-                className={` ${themeToggle ? "bg-slate-800 border text-white border-green-400 " : "text-slate-800 "} rounded-md px-3 py-4 w-full lg:w-96 shadow-lg  `}>
-             <h4 className=' font-bold text-cyan-500 text-2xl mb-4'>{program.title}</h4>
+                className={` ${themeToggle ? " border-gray-700" : "border-gray-300 "} rounded-md border  px-3 py-4 w-full lg:w-full shadow-lg  `}>
+             <h4 className=' font-bold text-blue-600 text-xl mb-4'>{program.title}</h4>
  
              <p
                 initial="hidden"

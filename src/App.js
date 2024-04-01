@@ -23,18 +23,18 @@ function App() {
 
 
   return (
-    <div className={`App scroll-smooth bg-gradient-to-r ${ themeToggle? 'from-green-950 to-slate-700 text-gray-200 transition-all ease-out delay-300 ': ' from-slate-100 to-sky-200 text-gray-800 transition-all ease-out delay-300'} px-4  font-Inter  overflow-x-hidden`}>
+    <div className={`App scroll-smooth bg-gradient-to-r ${ themeToggle? 'from-green-950 to-slate-700 text-gray-200 transition-all ease-out delay-300 ': ' from-slate-100 to-slate-200 text-gray-800 transition-all ease-out delay-300'}  font-Inter  overflow-x-hidden`}>
         <BrowserRouter>
 
         <Navbar themeToggle={themeToggle} handleThemeToggle={handleThemeToggle}/>
-      <div className=' w-full md:w-[90%] lg:w-[70%] m-auto'>
+      <div className=' w-full md:w-[90%] lg:w-[70%] m-auto px-4'>
       
       
            
 
                 <Hero />
                 <About />
-                <Programs />
+                <Programs themeToggle={themeToggle} />
                 <OurFields />
                 <Portfolio />
                 <Team />

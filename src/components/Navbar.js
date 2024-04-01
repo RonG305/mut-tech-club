@@ -25,14 +25,15 @@ const Navbar = ({themeToggle, handleThemeToggle}) => {
     };
 
     return (
-        <div className="flex items-center justify-between lg:min-h-[75px] py-5 shadow-xl  fixed w-full px-2 rounded-md mb-8 z-50">
-            <h3 className="font-bold text-cyan-500">MUTTeC</h3>
+        <div className={` ${themeToggle? 'bg-slate-400': 'bg-slate-700 text-white'} flex items-center justify-between lg:min-h-[75px] py-5 shadow-xl  fixed w-full px-4 rounded-md mb-8 z-50`}>
+            <span className=' flex gap-2 items-center '><img src='/images/mut.png' style={{width: '30px', borderRadius: '50%'}} alt='mut-logo' /><h3 className="font-bold text-blue-600">MUT TEC</h3></span>
+            
             <div className={`lg:flex items-center gap-4 ${show ? '' : 'hidden'}`}>
                 {navLinks.map((link) => (
                     <Link
                         to={link.url}
                         key={link.name} 
-                        className="flex flex-col  capitalize hover:border hover:border-sky-400 rounded-md px-2 py-1 cursor-pointer ease-out delay-150"
+                        className="flex flex-col  capitalize hover:border hover:border-blue-600 rounded-md px-2 py-1 cursor-pointer ease-out delay-150 "
                         onClick={toggleNav}
                         smooth
                     >

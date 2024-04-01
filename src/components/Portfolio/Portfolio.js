@@ -27,7 +27,7 @@ const Portfolio = () => {
     className={containerStyle}>
         <div className={subContainerStyle}>
             <h3 className={headerStyle}>{header}</h3>
-            <p className=' text-blue-400 '>{portfolioDescr}</p>
+            <p className=' text-blue-600 font-semibold '>{portfolioDescr}</p>
         </div>
         <div className=' grid grid-cols-2 gap-3'>
             {PortfolioData.map((project, index) => (

@@ -9,9 +9,9 @@ const Programs = ({themeToggle}) => {
     <div>
         <div id='programs' className=' text-center'>
             <h3 className=' font-extrabold text-2xl mb-4 md:text-4xl text-center mt-10'>Our Programs</h3>
-            <p className=' text-sky-400 mb-4'>Our Club dives into these programs for advancement of our technology</p>
+            <p className=' text-blue-600 font-semibold mb-4'>Our Club dives into these programs for advancement of our technology</p>
             </div>  
-            <div className=' flex items-center  justify-center gap-3 flex-wrap'>
+            <div className='lg:grid grid-cols-2 gap-2 flex flex-col items-center  justify-center  '>
                 <ProgramsCard themeToggle={themeToggle} />
             </div>
             

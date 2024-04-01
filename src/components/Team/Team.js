@@ -29,7 +29,7 @@ const Team = () => {
             },
 
             {
-                imageUrl: '/ron.png',
+                imageUrl: '/images/ronald.jpeg',
                 leaderTitle: "  Ronald Mutia",
                 leaderIntro: " Our Technical Coordinator and Web Development Leader",
                 description: "Ronald Mutia is the driving force behind our technical operations and web development initiatives. As the club's Technical Coordinator, Ronald ensures seamless execution of projects and coordinates our technical endeavors with precision. Additionally, Ronald leads our web development team with expertise and innovation, shaping our online presence and user experience."
@@ -75,7 +75,7 @@ const Team = () => {
     >
     <div className=' text-center'>
         <h3 className=' text-3xl font-extrabold'>Team</h3>
-        <p className='text-sky-400 '>This is our able Team of leaders</p>
+        <p className='text-blue-600 font-semibold '>This is our able Team of leaders</p>
     </div>
     <Splide
       className='my-4'
@@ -83,7 +83,8 @@ const Team = () => {
         rewind: true,
         gap   : '1rem',
         autoplay:true,
-        height: "750px",
+        height: "600px",
+        
      
       } }
       aria-label="mut Teach leaders"
@@ -91,11 +92,11 @@ const Team = () => {
 
         {TeamLeaders.map((lead, index) => (
             <SplideSlide   
-                className='md:flex gap-4 bg-slate-700 '
+                className='md:flex gap-4 bg-slate-700 rounded-md p-3'
             >
-                <img className='lg:h-full h-1/2' src={lead.imageUrl} alt="Image 1"/>
+                <img className='lg:w-1/2 h-[60%]  rounded-md' src={lead.imageUrl} alt="Image 1"/>
                 <div className=' p-2'>
-                    <h3 className=' text-sky-400 font-bold text-2xl mb-2'>{lead.leaderTitle}</h3>
+                    <h3 className=' text-blue-600 font-bold text-2xl mb-2'>{lead.leaderTitle}</h3>
                     <h4 className=' font-bold text-slate-300 text-xl'>{lead.leaderIntro}</h4>
                     <p className=' text-white my-3'>{lead.description}</p>
                 </div>

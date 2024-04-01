@@ -6,7 +6,7 @@ const FieldCard = ({themeToggle}) => {
 
     const cardStyles = {
         cardContainer : "rounded-md border-slate-800 p-4 dark:bg-slate-800 hover:text-gray-500 cursor-pointer ",
-        cardHeader: "font-bold text-2xl my-4 dark:text-sky-400"
+        cardHeader: "font-bold text-xl my-4 dark:text-blue-600"
     
     }
 

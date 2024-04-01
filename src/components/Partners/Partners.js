@@ -14,7 +14,7 @@ const Partners = () => {
     <motion.div
         
         id='partners'
-        className=' flex gap-3'>
+        className=' flex flex-wrap gap-3'>
         {partnerLogos.map((logo) => (
           <span className=' border border-gray-700 rounded-md px-3 py-1 flex items-center cursor-pointer gap-3 w-fit hover:bg-slate-950  transition-all delay-150 hover:translate-x-1 '>
                <a href={logo.link} >
